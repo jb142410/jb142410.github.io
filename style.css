@@ -613,6 +613,11 @@ input:focus, textarea:focus{
   margin-bottom:20px;
 }
 
+/* EMPUJA EL FOOTER HACIA ABAJO */
+footer{
+  margin-top:auto;
+}
+
 .contenido p{
   line-height:1.6;
   color:#ccc;
