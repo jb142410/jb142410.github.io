@@ -1,0 +1,639 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Montserrat', sans-serif;
+}
+
+/* TIPOGRAFÍA */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+body{
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:#000;
+}
+
+/* LOGO */
+.logo{
+  color:white;
+  font-size:28px;
+  font-weight:500;
+  letter-spacing:2px;
+}
+
+/* CUADRADO BLANCO */
+.logo span{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  background:white;
+  margin-left:5px;
+}
+
+/* MENÚ */
+.menu a{
+  color:white;
+  text-decoration:none;
+  margin-left:30px;
+  font-size:16px;
+  font-weight:300;
+  letter-spacing:1px;
+  position:relative;
+}
+
+/* EFECTO HOVER SUTIL */
+.menu a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-5px;
+  width:0%;
+  height:1px;
+  background:white;
+  transition:0.3s;
+}
+
+.menu a:hover::after{
+  width:100%;
+}
+
+/* LÍNEA GRIS INFERIOR */
+.linea{
+  width:100%;
+  height:20px;
+  background:#ccc;
+}
+/*.menu a{
+  margin-left:20px;
+  text-decoration:none;
+  color:black;
+  transition:0.3s;
+}
+
+.menu a:hover{
+  opacity:0.6;
+}
+*/
+/* HERO */
+.hero{
+  height:100vh;
+  background:url('img/hero.jpg') center/cover no-repeat;
+}
+
+.overlay{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:rgba(0,0,0,0.4);
+  color:white;
+}
+
+/* BOTÓN */
+.btn{
+  margin-top:20px;
+  padding:12px 25px;
+  border:1px solid white;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:white;
+  color:black;
+}
+
+/* SECCIONES */
+.section{
+  padding:120px 50px;
+}
+
+.section-nosotros{
+    max-width: 1000px; 
+    text-align: justify;
+    
+   
+}  
+
+.oscuro{
+  background:#111;
+  color:white;
+}
+
+.titulo{
+  margin-bottom:40px;
+  text-align:center;
+  font-family:'Playfair Display';
+  font-size:35px;
+}
+
+.texto{
+  max-width:600px;
+  margin:auto;
+  text-align:center;
+}
+
+/* GRID PROYECTOS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+  gap:20px;
+}
+
+/* CARDS */
+.card{
+  position:relative;
+  overflow:hidden;
+}
+
+.card img{
+  width:100%;
+  transition:0.5s;
+}
+
+.card:hover img{
+  transform:scale(1.1);
+}
+
+/* TEXTO SOBRE IMAGEN */
+.card-info{
+  position:absolute;
+  bottom:0;
+  background:rgba(0,0,0,0.6);
+  width:100%;
+  color:white;
+  padding:10px;
+}
+
+/* FORMULARIO */
+.form{
+  max-width:400px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+}
+
+input, textarea{
+  margin:10px 0;
+  padding:12px;
+  border:1px solid #ccc;
+}
+
+/* FOOTER */
+footer{
+  background:black;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+/* ANIMACIÓN */
+.fade-in{
+  opacity:0;
+  transform:translateY(20px);
+  transition:1s;
+}
+
+.fade-in.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* REDES SOCIALES */
+.redes{
+  margin-top:20px;
+}
+
+.redes a{
+  margin:0 10px;
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+}
+
+footer{
+  background:black;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+
+
+
+
+
+/* BOTÓN PRO */
+.btn-pro{
+  margin-top:20px;
+  padding:14px 30px;
+  border:1px solid white;
+  color:white;
+  text-decoration:none;
+  position:relative;
+  overflow:hidden;
+  transition:0.4s;
+}
+
+/* EFECTO HOVER PRO */
+.btn-pro::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:white;
+  transition:0.4s;
+}
+
+.btn-pro:hover::before{
+  left:0;
+}
+
+.btn-pro:hover{
+  color:black;
+}
+
+/* PORTAFOLIO CARDS MEJORADAS */
+.card{
+  overflow:hidden;
+  position:relative;
+}
+
+.card img{
+  width:100%;
+  transition:0.5s;
+}
+
+/* ZOOM + OSCURECER */
+.card:hover img{
+  transform:scale(1.1);
+  filter:brightness(70%);
+}
+
+/* ICONOS REDES */
+.redes{
+  margin-top:20px;
+}
+
+.redes a{
+  margin:0 10px;
+  color:white;
+  font-size:20px;
+  transition:0.3s;
+}
+
+.redes a:hover{
+  transform:scale(1.3);
+  color:#ccc;
+}
+
+
+
+
+
+
+
+
+
+
+/* TRANSICIÓN GLOBAL */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   🔹 MENÚ (línea animada)
+========================= */
+nav a{
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 5px 0;
+}
+
+nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:0%;
+  height:2px;
+  background:black;
+  transition:0.4s;
+}
+
+nav a:hover::after{
+  width:100%;
+}
+
+/* =========================
+   🔹 BOTÓN PRINCIPAL (hero)
+========================= */
+.btn-pro{
+  display:inline-block;
+  padding:14px 30px;
+  color:white;
+  border:1px solid white;
+  text-decoration:none;
+  position:relative;
+  overflow:hidden;
+  z-index:1;
+}
+
+/* FONDO ANIMADO */
+.btn-pro::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:0%;
+  height:100%;
+  background:white;
+  z-index:-1;
+  transition:0.4s ease;
+}
+
+.btn-pro:hover::before{
+  width:100%;
+}
+
+.btn-pro:hover{
+  color:black;
+}
+
+/* =========================
+   🔹 BOTÓN FORMULARIO
+========================= */
+button{
+  background:black;
+  color:white;
+  border:none;
+  padding:12px;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+}
+
+/* EFECTO BRILLO */
+button::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:rgba(255,255,255,0.3);
+  transform:skewX(-30deg);
+  transition:0.5s;
+}
+
+button:hover::after{
+  left:120%;
+}
+
+/* =========================
+   🔹 CARDS (proyectos)
+========================= */
+.card{
+  position:relative;
+  overflow:hidden;
+}
+
+.card img{
+  width:100%;
+  transition:0.5s;
+}
+
+.card::after{
+  content:"Ver proyecto";
+  position:absolute;
+  bottom:-50px;
+  left:0;
+  width:100%;
+  text-align:center;
+  color:white;
+  font-weight:bold;
+  transition:0.4s;
+}
+
+.card:hover img{
+  transform:scale(1.1);
+  filter:brightness(60%);
+}
+
+.card:hover::after{
+  bottom:20px;
+}
+
+/* =========================
+   🔹 REDES SOCIALES
+========================= */
+.redes a{
+  font-size:22px;
+  color:white;
+  margin:0 10px;
+  display:inline-block;
+  transition:0.3s;
+}
+
+.redes a:hover{
+  transform:translateY(-5px) scale(1.2);
+  color:#aaa;
+}
+
+/* =========================
+   🔹 EFECTO GENERAL SUAVE
+========================= */
+*{
+  scroll-behavior:smooth;
+}
+
+
+/* movimientos */
+
+/* HERO SLIDER */
+.hero{
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+}
+
+/* CADA IMAGEN */
+.slide{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-size:cover;
+  background-position:center;
+  opacity:0;
+  transition:opacity 1.5s ease-in-out;
+}
+
+/* IMAGEN ACTIVA */
+.slide.active{
+  opacity:1;
+}
+
+/* CAPA OSCURA */
+.overlay{
+  position:relative;
+  z-index:2;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:rgba(0,0,0,0.4);
+  color:white;
+  text-align:center;
+}
+
+
+
+
+/* envio*/
+
+/* INPUTS */
+.input-group{
+  position:relative;
+  margin-bottom:20px;
+}
+
+input, textarea{
+  width:100%;
+  padding:12px;
+  border:1px solid #ccc;
+  outline:none;
+  transition:0.3s;
+}
+
+/* EFECTO FOCUS */
+input:focus, textarea:focus{
+  border-color:black;
+  box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+
+/* ERROR */
+.error{
+  color:red;
+  font-size:12px;
+  position:absolute;
+  bottom:-18px;
+  left:0;
+  display:none;
+}
+
+/* INPUT ERROR */
+.input-error input,
+.input-error textarea{
+  border-color:red;
+}
+
+/* MENSAJE ÉXITO */
+.exito{
+  display:none;
+  margin-top:15px;
+  color:green;
+  font-weight:bold;
+  animation:fadeIn 0.5s ease;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+/* BOTÓN CARGANDO */
+.loading{
+  opacity:0.6;
+  pointer-events:none;
+}
+
+
+
+
+/* html nosotros*/
+
+
+/* SECCIÓN */
+.info-dinamica{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:100px;
+  background:#0d0d0d;
+  color:white;
+  gap:60px;
+}
+
+/* IMÁGENES */
+.imagenes{
+  position:relative;
+  width:400px;
+  height:500px;
+}
+
+.img{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0;
+  transition:1s;
+}
+
+.img.active{
+  opacity:1;
+}
+
+/* TEXTO */
+.contenido{
+  max-width:500px;
+}
+
+.contenido h2{
+  font-size:35px;
+  margin-bottom:20px;
+}
+
+.contenido p{
+  line-height:1.6;
+  color:#ccc;
+}
+
+/* BOTONES */
+.tabs{
+  margin-top:30px;
+}
+
+.tabs button{
+  margin-right:15px;
+  padding:10px 20px;
+  border:1px solid white;
+  background:transparent;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.tabs button:hover{
+  background:white;
+  color:black;
+}

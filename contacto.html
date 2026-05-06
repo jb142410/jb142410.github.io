@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Contacto</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<!-- ICONOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- TIPOGRAFÍA -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">QABA<span></span></div>
+
+  <nav class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="proyectos.html">Proyectos</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+<div class="linea"></div>
+
+<section class="section">
+  <h2>Contacto</h2>
+
+ <form class="form" id="formulario" action="https://formspree.io/f/mdabgavj" method="POST">
+
+  <div class="input-group">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <span class="error">Nombre requerido</span>
+  </div>
+
+  <div class="input-group">
+    <input type="email" name="correo" placeholder="Correo" required>
+    <span class="error">Correo válido requerido</span>
+  </div>
+
+  <div class="input-group">
+    <input type="tel" name="telefono" placeholder="Teléfono" required>
+    <span class="error">Teléfono requerido</span>
+  </div>
+
+  <div class="input-group">
+    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+    <span class="error">Mensaje requerido</span>
+  </div>
+
+  <button type="submit" class="btn-pro">Enviar</button>
+
+  <!-- MENSAJE -->
+  <p id="mensaje-exito" class="exito">✔ Mensaje enviado correctamente</p>
+
+</form>
+<footer>
+     <p>© 2026 QABA Diseño y Construcción</p>
+    <div class="redes">
+        <a href="https://www.instagram.com/qaba.disenoyconstruccion/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/qaba.disenoconstruccion/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/qaba-dise%C3%B1o-y-construcci%C3%B3n/?viewAsMember=true"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/message/BZPPHXYXEIFGP1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+</footer>
+
+</body>
+</html>
