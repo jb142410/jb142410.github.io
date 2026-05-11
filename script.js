@@ -126,3 +126,10 @@ function cambiar(index){
   imagenes.forEach(img => img.classList.remove("active"));
   imagenes[index].classList.add("active");
 }
+
+
+window.onload = function() {
+  if (document.getElementById("titulo")) {
+    cambiar(0); // Carga "Quiénes somos" automáticamente al iniciar
+  }
+};
